@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="utf-8">
+  <title>HappyNewYear</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    canvas {
+      background: #eee;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+  <style>@import url('https://fonts.googleapis.com/css?family=Orbitron:400,500');</style>
+
+
+  <script language="JavaScript" src="lib/vec.js"></script>
+  <script language="JavaScript" src="lib/drawString.js"></script>
+  <script language="JavaScript" src="lib/firework.js"></script>
+  <script language="JavaScript" src="lib/particle.js"></script>
+  <script language="JavaScript" src="lib/main.js"></script>
+</head>
+
+<body>
+<audio id="audio" autoplay="autoplay" loop="loop" >
+  <source src="./resource/bgm.mp3" type="audio/mp3"/>
+</audio>
+</body>
+
+</html>
+
+<script>
+  const box = document.getElementsByTagName("body")[0];
+  box.addEventListener("click", function () {
+    let audio = document.getElementById("audio");
+    audio.play();
+  });
+</script>

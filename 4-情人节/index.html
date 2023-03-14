@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <title>情人节快乐，宝宝</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <link href="./main.css" rel="stylesheet">
+</head>
+<body>
+<div id="app"></div>
+<audio loop="loop" src="./1.mp3" style="display: none"></audio>
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?427f26cb2d696cfb47852124c621bde2";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+  document.body.addEventListener('touchstart', function () {
+    document.querySelector('audio').play();
+  });
+  document.body.addEventListener('click', function () {
+    document.querySelector('audio').play();
+  });
+</script>
+<script src="./main.js" type="text/javascript"></script>
+</body>
+
+</html>

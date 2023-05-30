@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/jquery.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="backgroundImages"></div>
+    <img src="./img/1.gif" class="backgroundGIF">
+
+    <img src="./img/2.gif" class="fourGIF" style="margin: -380px 50px; height: 300px;">
+    <img src="./img/3.gif" class="fourGIF" style="margin: 0px -600px;">
+    <img src="./img/4.gif" class="fourGIF" style="margin: -400px -800px;">
+    <img src="./img/5.gif" class="fourGIF">
+    <div class="text-box">
+        <div class="title">
+            <p>In modern society, people have more and more choices in all aspects,</p>
+            <p>and fast-food love is gradually chosen by more and more people.</p>
+            <p>People become impetuous in their heart,</p>
+            <p>and the threshold of happiness is constantly raised,</p>
+            <p>which leads to the physiological changes of "black brain disease".</p>
+            <p>In order to adapt to this situation in the future world,</p>
+            <p>humans have evolved and merged with animals.</p>
+            <p>If you enter such a world, what kind of animal human will you become?</p>
+        </div>
+        <button class="start">S T A R T</button>
+        <div class="text-everyone" style="margin-top: 25px;">
+            <p>1. If your partner had to change into an animal, what would you want him to become?</p>
+            <div>
+                <input type="radio" name="kind1" value="1" id="value11"><label for="value11">A.Bird</label>
+                <input type="radio" name="kind1" value="2" id="value12"><label for="value12">B.Ant</label>
+                <input type="radio" name="kind1" value="3" id="value13"><label for="value13">C.Caterpillar</label>
+                <input type="radio" name="kind1" value="4" id="value14"><label for="value14">D.Dog</label>
+            </div>
+        </div>
+        <div class="text-everyone">
+            <p>2. If you had to spend your life with one of the following things, which would it be?</p>
+            <div>
+                <input type="radio" name="kind2" value="1" id="value21"><label for="value21">A.Curtains</label>
+                <input type="radio" name="kind2" value="2" id="value22"><label for="value22">B.Bed</label>
+                <input type="radio" name="kind2" value="3" id="value23"><label for="value23">C.Washing machine</label>
+                <input type="radio" name="kind2" value="4" id="value24"><label for="value24">D.Pens and paper</label>
+            </div>
+        </div>
+        <div class="text-everyone">
+            <p>3. You're walking down the street when someone stops you and asks you to fill out a weird questionnaire,
+                and you're a little skeptical about where the data will be used to, so you're reluctant to fill it out
+                too carefully. Which of the following would you lie about?</p>
+            <div>
+                <input type="radio" name="kind3" value="1" id="value31"><label for="value31">A.Name</label>
+                <input type="radio" name="kind3" value="2" id="value32"><label for="value32">B.Phone number</label>
+                <input type="radio" name="kind3" value="3" id="value33"><label for="value33">C.Age</label>
+                <input type="radio" name="kind3" value="4" id="value34"><label for="value34">D.Marital status</label>
+            </div>
+        </div>
+        <!-- <div class="text-everyone">
+            <p>4. Your current status?</p>
+            <div>
+                <input type="radio" name="kind4" value="1" id="value41"><label for="value41">A.Single</label>
+                <input type="radio" name="kind4" value="2" id="value42"><label for="value42">B.In a relationship</label>
+                <input type="radio" name="kind4" value="3" id="value43"><label for="value43">C.Aspirant</label>
+                <input type="radio" name="kind4" value="4" id="value44"><label for="value44">D.Being courted</label>
+            </div>
+        </div> -->
+        <div class="text-everyone">
+            <p>4. If you were a pig with superpowers, what superpower would you choose to have?</p>
+            <div>
+                <input type="radio" name="kind5" value="1" id="value51"><label for="value51">A.Flying</label>
+                <input type="radio" name="kind5" value="2" id="value52"><label for="value52">B.Stealth</label>
+                <input type="radio" name="kind5" value="3" id="value53"><label for="value53">C.Mind reading</label>
+                <input type="radio" name="kind5" value="4" id="value54"><label for="value54">D.Transfilayout</label>
+            </div>
+        </div>
+        <div class="text-everyone">
+            <p>5. If a frog wants to have dinner with you, what would you eat?</p>
+            <div>
+                <input type="radio" name="kind6" value="1" id="value61"><label for="value61">A.McDonald's</label>
+                <input type="radio" name="kind6" value="2" id="value62"><label for="value62">B.Instant noodles</label>
+                <input type="radio" name="kind6" value="3" id="value63"><label for="value63">C.Stinky tofu</label>
+                <input type="radio" name="kind6" value="4" id="value64"><label for="value64">D.Light salad</label>
+            </div>
+        </div>
+        <!-- <div class="text-everyone">
+            <p>7.What do you think is fast food love?</p>
+            <div>
+                <input type="radio" name="kind7" value="1" id="value71"><label for="value71">A.Love based on money</label>
+                <input type="radio" name="kind7" value="2" id="value72"><label for="value72">B.Instant noodles</label>
+                <input type="radio" name="kind7" value="3" id="value73"><label for="value73">C.Love for sex</label>
+                <input type="radio" name="kind7" value="4" id="value74"><label for="value74">D.Light salad</label>
+            </div>
+        </div> -->
+        <button class="upload">S U B M I T</button>
+    </div>
+    <div class="scoreShow">
+        <div class="scoreShow-textBox">
+            <h2>Your Personality is&nbsp;<h1>NOTFOUND</h1>
+            </h2>
+        </div>
+        <div class="scoreShow-btn">
+            <h2>SEE MORE</h2>
+        </div>
+    </div>
+    <div class="seemore-btn">
+        <a href="#otherEndPic">
+            <h2>SEE MORE</h2>
+        </a>
+    </div>
+
+    <video src="https://ishortv-1308682615.cos.ap-shanghai.myqcloud.com/2.mp4"></video>
+    <div id="black"></div>
+    <div class="otherEndPic" style="display: block; opacity: 1;" id="test1">
+        <!-- <a name="otherEndPic"></a> -->
+        <div
+            style="background: url(./img/jpg/2294.jpg) no-repeat; background-size: cover; background-position: right center; transition: 1s;">
+        </div>
+        <!-- <div>
+            <div>
+                <h2>TEXT</h2>
+            </div>
+        </div> -->
+        <div style="width: 490px; float: right; margin: 50px 30px 0;" class="otherText">
+            <h2>Rabbits are in heat all year round and have false pregnancies.</h2>
+            <h2>Emotional feelings even affect the rabbit's body.</h2>
+        </div>
+    </div>
+    <div class="otherEndPic" style="display: block; opacity: 1;" id="test2">
+        <!-- <a name="otherEndPic"></a> -->
+        <div
+            style="background: url(./img/jpg/6487.jpg) no-repeat; background-size: cover; background-position: right center; transition: 1s;">
+        </div>
+        <!-- <div>
+            <div>
+                <h2>TEXT</h2>
+            </div>
+        </div> -->
+        <div style="width: 490px; float: right; margin: 50px 30px 0;" class="otherText">
+            <h2>The rabbit type future man takes love as a kind of spirit sustains and has an emotional attachment
+                personality.</h2>
+            <h2>It is commonly known as "crazy love brain".</h2>
+        </div>
+    </div>
+    <div class="otherEndPic" style="display: block; opacity: 1;" id="test3">
+        <!-- <a name="otherEndPic"></a> -->
+        <div
+            style="background: url(./img/jpg/0017.jpg) no-repeat; background-size: cover; background-position: right center; transition: 1s;">
+        </div>
+        <!-- <div>
+            <div>
+                <h2>TEXT</h2>
+            </div>
+        </div> -->
+        <div style="width: 490px; float: right; margin: 50px 30px 0;" class="otherText">
+            <h2>But it also represents a kind of beautiful love spirit in love.</h2>
+        </div>
+    </div>
+    <div class="otherEndPic" style="display: block; opacity: 1;" id="test4">
+        <!-- <a name="otherEndPic"></a> -->
+        <div
+            style="background: url(./img/jpg/2322.jpg) no-repeat; background-size: cover; background-position: right center; transition: 1s;">
+        </div>
+        <!-- <div>
+            <div>
+                <h2>TEXT</h2>
+            </div>
+        </div> -->
+        <div style="width: 490px; float: right; margin: 50px 30px 0;" class="otherText">
+            <h2>The kind and gentle rabbit people have the spirit of fairy tale love and the vision of beautiful love.
+            </h2>
+        </div>
+    </div>
+    <div class="otherEndPic" style="display: block; opacity: 1;" id="test5">
+        <div
+            style="background-image: url(./img/jpg/0028.jpg); background-size: cover; background-position: right center; transition: 1s;">
+        </div>
+        <!-- <div>
+            <div>
+                <h2>TEXT</h2>
+            </div>
+        </div> -->
+        <div style="width: 490px; float: right; margin: 50px 30px 0;" class="otherText">
+            <h2>The female mantis will eat the male mantis after mating.Mantis Man represents the uncontrollable and
+                dangerous nature of fast-food love.</h2>
+        </div>
+    </div>
+    <div class="otherEndPic" style="display: block; opacity: 1;" id="test6">
+        <div
+            style="background-image: url(./img/jpg/0092.jpg); background-size: cover; background-position: right center; transition: 1s;">
+        </div>
+        <!-- <div>
+            <div>
+                <h2>TEXT</h2>
+            </div>
+        </div> -->
+        <div style="width: 490px; float: right; margin: 50px 30px 0;" class="otherText">
+            <h2>Point to physical behavior.</h2>
+            <h2>It also discusses the relationship between virtual and real: in the future world,</h2>
+        </div>
+    </div>
+    <div class="otherEndPic" style="display: block; opacity: 1;" id="test7">
+        <div
+            style="background-image: url(./img/jpg/0095.jpg); background-size: cover; background-position: right center; transition: 1s;">
+        </div>
+        <!-- <div>
+            <div>
+                <h2>TEXT</h2>
+            </div>
+        </div> -->
+        <div style="width: 490px; float: right; margin: 50px 30px 0;" class="otherText">
+            <h2>people will not be able to judge the personality of online dating or dating partners.</h2>
+        </div>
+    </div>
+    <div class="otherEndPic" style="display: block; opacity: 1;" id="test8">
+        <div
+            style="background-image: url(./img/jpg/6437.jpg); background-size: cover; background-position: right center; transition: 1s;">
+        </div>
+        <!-- <div>
+            <div>
+                <h2>TEXT</h2>
+            </div>
+        </div> -->
+        <div style="width: 490px; float: right; margin: 50px 30px 0;" class="otherText">
+            <h2>Mantis Man is also discussing the definition and link between virtuality and reality.</h2>
+        </div>
+    </div>
+    <div class="otherEndPic" style="display: block; opacity: 1;" id="test9">
+        <div
+            style="background-image: url(./img/jpg/0140.jpg); background-size: cover; background-position: right center; transition: 1s;">
+        </div>
+        <!-- <div>
+            <div>
+                <h2>TEXT</h2>
+            </div>
+        </div> -->
+        <div style="width: 490px; float: right; margin: 50px 30px 0;" class="otherText">
+            <h2>In a weaver birds flock, females choose a date by comparing suitors with those who have the best nest.
+            </h2>
+        </div>
+    </div>
+    <div class="otherEndPic" style="display: block; opacity: 1;" id="test10">
+        <div
+            style="background-image: url(./img/jpg/2084.jpg); background-size: cover; background-position: center bottom; transition: 1s;">
+        </div>
+        <!-- <div>
+            <div>
+                <h2>TEXT</h2>
+            </div>
+        </div> -->
+        <div style="width: 490px; float: right; margin: 50px 30px 0;" class="otherText">
+            <h2>The weaver birds represents purpose and materiality in a loving relationship.</h2>
+            <h2>At the fast pace of modern life, weavers who choose fast love often decide on a date by judging</h2>
+        </div>
+    </div>
+    <div class="otherEndPic" style="display: block; opacity: 1;" id="test11">
+        <div
+            style="background-image: url(./img/jpg/9673.jpg); background-size: cover; background-position: right center; transition: 1s;">
+        </div>
+        <!-- <div>
+            <div>
+                <h2>TEXT</h2>
+            </div>
+        </div> -->
+        <div style="width: 490px; float: right; margin: 50px 30px 0;" class="otherText">
+            <h2>the other person's financial and material resources.</h2>
+        </div>
+    </div>
+    <div class="otherEndPic" style="display: block; opacity: 1;" id="test12">
+        <div
+            style="background-image: url(./img/jpg/6498.jpg); background-size: cover; background-position: right center; transition: 1s;">
+        </div>
+        <!-- <div>
+            <div>
+                <h2>TEXT</h2>
+            </div>
+        </div> -->
+        <div style="width: 490px; float: right; margin: 50px 30px 0;" class="otherText">
+            <h2>But there is also a degree of pragmatism involved.</h2>
+        </div>
+    </div>
+    <div style="height: auto; width: auto; text-align: center;">
+        <h2
+            style="color: aliceblue; background-color: #586a74; font-weight: 300; font-size: 25px;line-height: 45px; width: 300px; margin: 0 auto 20px;">
+            MORE VIDEO</h2>
+        <div class="otherEndPic" style="width: 250px; height: 250px;display: inline-block; opacity: 1; margin: 30px;">
+            <a name="otherEndPic"></a>
+            <div style="width: 250px; height: 250px; display: inline-block;">
+                <div style="width: 250px; height: 250px; display: inline-block;">
+                    <h2 style="display: inline-block;">TEXT</h2>
+                </div>
+            </div>
+            <!-- <div style="width: 490px; float: right; margin: 30px;" class="otherText"></div> -->
+        </div>
+        <div class="otherEndPic" style="width: 250px; height: 250px;display: inline-block; opacity: 1;margin: 30px;">
+            <div style="width: 250px; height: 250px; display: inline-block;">
+                <div style="width: 250px; height: 250px; display: inline-block;">
+                    <h2 style="display: inline-block;">TEXT</h2>
+                </div>
+            </div>
+            <!-- <div style="width: 490px; float: right; margin: 30px;"class="otherText"></div> -->
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./js/main.js"></script>
